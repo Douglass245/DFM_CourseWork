@@ -3,3 +3,51 @@
 <head>
     <title>Contact Us</title>
 </head>
+<form action="fakePage.html" method="POST">
+  <table>
+    <tr>
+      <td align="right">First Name:</td>
+      <td align="left"><input type="text" name="first" /></td>
+    </tr>
+    <tr>
+      <td align="right">Last Name:</td>
+      <td align="left"><input type="text" name="last" /></td>
+    </tr>
+    <tr>
+      <td align="right">Email:</td>
+      <td align="left"><input type="text" name="email" /></td>
+    </tr>
+    <tr>
+        <td align="right">Type of License:</td>
+        <td>
+        <input type="radio" name="answer" value="Busisness" checked/><label>Busisness</label>
+        <input type="radio" name="answer" value="Personal" /><label>Personal</label>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">Reason:</td>
+        <td input type="select" name="reason"/>
+            <select>
+                <option value="Select a Reason">Select a Reason</option>
+                <option value="Software Support">Software Support</option>
+                <option value="Hardware Support">Hardware Support</option>
+                <option value="Information Request">Information Request</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="top">Additional Intormation:</td>
+        <td align="left"><textarea name="additional info" rows="4" cols="22"/></textarea></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="checkbox" name="terms" value="I have read the terms of service" />I have read the terms of service<br/>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td align="center"><button>Send Request</button></td>
+    </tr>
+  </table>
+</form>
