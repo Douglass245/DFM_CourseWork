@@ -24,12 +24,62 @@
         </table>
     </div>
     <hr></hr>
-
-
-
-
-    <hr></hr>
-        <p><center>1 Mill, Rochester, NH, 03867</center></p>
-        <p><center>(603)335-6890</center></p>
-    <hr></hr>
+    <form action="fakePage.html" method="POST">
+        <table>
+            <tr>
+                <td align="right">Name:</td>
+                <td align="left"><input type="text" name="first" /></td>
+            </tr>
+            <tr>
+                <td align="right">Email:</td>
+                <td align="left"><input type="text" name="last" /></td>
+            </tr>
+            <tr>
+                <td align="right">Phone:</td>
+                <td align="left"><input type="text" name="email" /></td>
+            </tr>
+            <tr>
+                <td align="right">Reason for Inqury:</td>
+                <td input type="select" name="reason"/>
+                    <select>
+                        <option value="Select a Reason">Catering</option>
+                        <option value="Software Support">Private Party</option>
+                        <option value="Hardware Support">Feedback</option>
+                        <option value="Information Request">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Additional Intormation:</td>
+                <td align="left"><textarea name="additional info" rows="4" cols="22"/></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">Have you been to the restaurant?</td>
+                <td>
+                    <input type="radio" name="answer" value="No" checked/><label>No</label>
+                    <input type="radio" name="answer" value="Yes" /><label>Yes</label>
+                </td>
+            </tr>    
+            <tr>
+                <td align="right">Best days to contact you:</td>
+                <td>
+                    <input type="checkbox" name="day" value="M" /><label>M</label>
+                    <input type="checkbox" name="day" value="T" /><label>T</label>
+                    <input type="checkbox" name="day" value="W" /><label>W</label>
+                    <input type="checkbox" name="day" value="Th" /><label>Th</label>
+                    <input type="checkbox" name="day" value="F" /><label>F</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right"><button>Send Request</button></td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <hr></hr>
+            <p><center>1 Mill, Rochester, NH, 03867</center></p>
+            <p><center>(603)335-6890</center></p>
+        <hr></hr>
+    </footer>
 </body>
