@@ -24,3 +24,6 @@ body {
 div.center {
     text-align: center;
 }
+div.narrowTable{
+    width:30%;
+}
