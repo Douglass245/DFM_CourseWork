@@ -6,13 +6,26 @@
           type="text/css"/>
     <title>Contact Us</title>
     <style>
+        form {
+            width:30%;
+            margin:0 auto;
+        }
         table {
             width: 100%;
         }
-        th, td {
-            text-align: center;
+        td {
+            text-align: right;
             vertical-align: top;
             padding: 10px;
+        }
+        select, textarea {
+            width: 100%;
+        }
+        input[type=text]{
+            width:100%;
+        }
+        inout[type=radio] {
+            width:100%;
         }
     </style>    
 </head>
@@ -43,19 +56,19 @@
     <form action="fakePage.html" method="POST">
         <table>
             <tr>
-                <td align="right">Name:</td>
-                <td align="left"><input type="text" name="first" /></td>
+                <td>Name:</td>
+                <td><input type="text" name="first" /></td>
             </tr>
             <tr>
-                <td align="right">Email:</td>
-                <td align="left"><input type="text" name="last" /></td>
+                <td>Email:</td>
+                <td><input type="text" name="last" /></td>
             </tr>
             <tr>
-                <td align="right">Phone:</td>
-                <td align="left"><input type="text" name="email" /></td>
+                <td>Phone:</td>
+                <td><input type="text" name="email" /></td>
             </tr>
             <tr>
-                <td align="right">Reason for Inqury:</td>
+                <td>Reason for Inqury:</td>
                 <td input type="select" name="reason"/>
                     <select>
                         <option value="Select a Reason">Catering</option>
@@ -66,18 +79,18 @@
                 </td>
             </tr>
             <tr>
-                <td align="right">Additional Intormation:</td>
-                <td align="left"><textarea name="additional info" rows="4" cols="22"/></textarea></td>
+                <td>Additional Intormation:</td>
+                <td><textarea name="additional info" rows="4" cols="22"/></textarea></td>
             </tr>
             <tr>
-                <td align="right">Have you been to the restaurant?</td>
+                <td>Have you been to the restaurant?</td>
                 <td>
                     <input type="radio" name="answer" value="No" checked/><label>No</label>
                     <input type="radio" name="answer" value="Yes" /><label>Yes</label>
                 </td>
             </tr>    
             <tr>
-                <td align="right">Best days to contact you:</td>
+                <td>Best days to contact you:</td>
                 <td>
                     <input type="checkbox" name="day" value="M" /><label>M</label>
                     <input type="checkbox" name="day" value="T" /><label>T</label>
@@ -88,7 +101,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td align="right"><button>Send Request</button></td>
+                <td><button>Send Request</button></td>
             </tr>
         </table>
     </form>
