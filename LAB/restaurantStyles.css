@@ -28,4 +28,6 @@ div.narrowTable{
     width:30%;
     text-align: center;
 }
-
+body h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+}
