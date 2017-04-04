@@ -13,7 +13,7 @@ body {
 }
 #body {
    padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
+   padding-bottom:100px;   /* Height of the footer */
 }
 #footer {
    position:absolute;
@@ -29,5 +29,5 @@ div.narrowTable{
     text-align: center;
 }
 body h1 {
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
