@@ -30,6 +30,9 @@
         inout[type=radio] {
             width:100%;
         }
+        .label {
+            font-weight: bold;
+        }
     </style>    
 </head>
 <body>
@@ -59,19 +62,19 @@
     <form action="fakePage.html" method="POST">
         <table>
             <tr>
-                <td>Name:</td>
+                <td class="label">Name:</td>
                 <td><input type="text" name="first" /></td>
             </tr>
             <tr>
-                <td>Email:</td>
+                <td class="label">Email:</td>
                 <td><input type="text" name="last" /></td>
             </tr>
             <tr>
-                <td>Phone:</td>
+                <td class="label">Phone:</td>
                 <td><input type="text" name="email" /></td>
             </tr>
             <tr>
-                <td>Reason for Inqury:</td>
+                <td class="label">Reason for Inqury:</td>
                 <td input type="select" name="reason"/>
                     <select>
                         <option value="Select a Reason">Catering</option>
@@ -82,18 +85,18 @@
                 </td>
             </tr>
             <tr>
-                <td>Additional Intormation:</td>
+                <td class="label">Additional Intormation:</td>
                 <td><textarea name="additional info" rows="4" cols="22"/></textarea></td>
             </tr>
             <tr>
-                <td>Have you been to the restaurant?</td>
+                <td class="label">Have you been to the restaurant?</td>
                 <td>
                     <input type="radio" name="answer" value="No" checked/><label>No</label>
                     <input type="radio" name="answer" value="Yes" /><label>Yes</label>
                 </td>
             </tr>    
             <tr>
-                <td>Best days to contact you:</td>
+                <td class="label">Best days to contact you:</td>
                 <td>
                     <input type="checkbox" name="day" value="M" /><label>M</label>
                     <input type="checkbox" name="day" value="T" /><label>T</label>
