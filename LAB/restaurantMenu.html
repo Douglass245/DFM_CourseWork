@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="restaurantStyles.css"
           rel="stylesheet"
           type="text/css"/>
@@ -18,9 +23,6 @@
             vertical-align: top;
             padding: 10px;
         }
-        body th {
-            font-size: x-large;
-        }
         #container {
             background-color: #9e9c9c;
         }
@@ -33,84 +35,93 @@
        .beverage {
             width: 30%;
         }
-        .beverage th {
+        .beverage {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div id="container">
+    <div class="container-fluid">
         <div id="header">
             <div class="center">
                 <h1>Bottom of the Barrel</h1>
             </div>
             <hr></hr>
-            <div class="narrowTable">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="restaurantHomePage.html">Home</a>
-                        </td>
-                        <td>
-                            <a href="restaurantMenu.html">Menu</a>
-                        </td>
-                        <td>
-                            <a href="restaurantContactUs.html">Contact Us</a>
-                        </td>
-                    </tr>
-                </table>
+            <div class="nav nav-tabs">
+                <li>
+                    <li><a href="restaurantHomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="restaurantMenu.html">Menu</a></li>
+                    <li><a href="restaurantContactUs.html">Contact Us</a></li>
+                </li>
             </div>
             <hr></hr>
         </div>
-        <div id="body">
-            <table>
-                <tr>
-                    <th>Burger and Fires</th>
-                    <th>Hot Dog and Chips</th>
-                    <th>Italian Sausage and Peppers</th>
-                </tr>
-                <tr>
-                    <td>An American Classic!<br>Your choice - with or without cheese<br>Pickle, onion, tomato, and lettuce.<br>Served with our famous thick cut french fries<br>$7.95</td>
-                    <td>A Summer Classic!<br>Your choice - white and wheat bun<br>Relish, mustard, and ketchup<br>Served with our house-made chips<br>$7.95</td>
-                    <td>An All-Time Favorite!<br>Your choice - mild or spicy<br>Coleslaw<br>Served with Mashers<br>$10.95</td>
-                </tr>
-                <tr>
-                    <th>Tenderloin Sandwich and Chips</th>
-                    <th>House Salad</th>
-                    <th>Brisket sandwich and Fries</th>
-                </tr>
-                <tr>
-                    <td>Really Hits the Spot!<br>Plain or Sesame Seed Bun<br>Pickle, onion, tomato, and lettuce.<br>Served with our house-made chips<br>$8.95</td>
-                    <td>On the Lighter Side<br>Your choice - whith or without cheese<br>Iceburg lettuce, tomatoes, peppers<br>Thousand Island or Ranch Dressing<br>Served with a dinner roll<br>$6.95</td>
-                    <td>A Taste of Texas!<br>Smoked Brisket on Thick-cut Texas Toast<br>Coleslaw<br>Served with our famous thick-cut french fries<br>$7.95</td>
-                </tr>            
-            </table>
-            <table class="beverage">
-                <thead>
-                    <tr>
-                        <th>Beverages</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Root Beer</td>
-                        <td>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td>Bottled Water</td>
-                        <td>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>$1.25</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Burger and Fires</h3>
+                    <p>An American Classic!<br>Your choice - with or without cheese<br>Pickle, onion, tomato, and lettuce.<br>Served with our famous thick cut french fries<br>$7.95</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Hot Dog and Chips</h3>
+                    <p>A Summer Classic!<br>Your choice - white and wheat bun<br>Relish, mustard, and ketchup<br>Served with our house-made chips<br>$7.95</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Italian Sausage and Peppers</h3>
+                    <p>An All-Time Favorite!<br>Your choice - mild or spicy<br>Coleslaw<br>Served with Mashers<br>$10.95</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Tenderloin Sandwich and Chips</h3>
+                    <p>Really Hits the Spot!<br>Plain or Sesame Seed Bun<br>Pickle, onion, tomato, and lettuce.<br>Served with our house-made chips<br>$8.95</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>House Salad</h3>
+                    <p>On the Lighter Side<br>Your choice - whith or without cheese<br>Iceburg lettuce, tomatoes, peppers<br>Thousand Island or Ranch Dressing<br>Served with a dinner roll<br>$6.95</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Brisket sandwich and Fries</h3>
+                    <p>A Taste of Texas!<br>Smoked Brisket on Thick-cut Texas Toast<br>Coleslaw<br>Served with our famous thick-cut french fries<br>$7.95</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="beverage">Beverages</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Root Beer</p>
+                </div> 
+                <div class="col-sm-4">
+                    <p>$3.00</p>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Bottled Water</p>
+                </div> 
+                <div class="col-sm-4">
+                    <p>$1.25</p>
+                </div> 
+            </div>        
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Lemonade</p>
+                </div> 
+                <div class="col-sm-4">
+                    <p>$1.00</p>
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Iced Tea</p>
+                </div> 
+                <div class="col-sm-4">
+                    <p>$1.25</p>
+                </div>
+            </div>
         </div>
         <div id="footer">
         <hr></hr>

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="restaurantStyles.css"
           rel="stylesheet"
           type="text/css"/>    
@@ -30,26 +35,21 @@
     </style>
 </head>
 <body>
-    <div id="container">
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>New location opening soon!</h1>
+        </div>
         <div id="header">
             <div class="center">
                 <h1>Bottom of the Barrel</h1>
             </div>
             <hr></hr>
-            <div class="narrowTable">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="restaurantHomePage.html">Home</a>
-                        </td>
-                        <td>
-                            <a href="restaurantMenu.html">Menu</a>
-                        </td>
-                        <td>
-                            <a href="restaurantContactUs.html">Contact Us</a>
-                        </td>
-                    </tr>
-                </table>
+            <div class="nav nav-tabs">
+                <li>
+                    <li><a href="restaurantHomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="restaurantMenu.html">Menu</a></li>
+                    <li><a href="restaurantContactUs.html">Contact Us</a></li>
+                </li>
             </div>
             <hr></hr>
         </div>
