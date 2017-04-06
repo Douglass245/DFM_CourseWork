@@ -16,6 +16,11 @@ body {
    min-height:550px;
    padding-bottom:60px;   /* Height of the footer */
 }
+#body2 {
+   padding:10px;
+   min-height:775px;
+   padding-bottom:60px;   /* Height of the footer */
+}
 #footer {
    position:relative;
    bottom:0;

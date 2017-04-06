@@ -12,31 +12,8 @@
     <title>Contact Us</title>
     <style>
         form {
-            width:30%;
+            width:50%;
             margin:0 auto;
-        }
-        table {
-            width: 100%;
-        }
-        td {
-            text-align: center;
-            vertical-align: top;
-            padding: 10px;
-        }
-        form td {
-            text-align: right;
-        }
-        select, textarea {
-            width: 100%;
-        }
-        input[type=text]{
-            width:100%;
-        }
-        inout[type=radio] {
-            width:100%;
-        }
-        .label {
-            font-weight: bold;
         }
     </style>    
 </head>
@@ -55,60 +32,66 @@
                 </li>
             </div>
         </div>
-    <form action="fakePage.html" method="POST">
-        <div id="body">
-        <table>
-            <tr>
-                <td class="label">Name:</td>
-                <td><input type="text" name="first" /></td>
-            </tr>
-            <tr>
-                <td class="label">Email:</td>
-                <td><input type="text" name="last" /></td>
-            </tr>
-            <tr>
-                <td class="label">Phone:</td>
-                <td><input type="text" name="email" /></td>
-            </tr>
-            <tr>
-                <td class="label">Reason for Inqury:</td>
-                <td input type="select" name="reason"/>
-                    <select>
-                        <option value="Select a Reason">Catering</option>
-                        <option value="Software Support">Private Party</option>
-                        <option value="Hardware Support">Feedback</option>
-                        <option value="Information Request">Other</option>
+    <div class="container">
+        <div id="body2">
+            <form action="fakePage.html" method="POST">
+                <div class="form-group row">
+                    <label for="nameInput" class="col-sm-6 col-form-label text-right">Name</label>
+                    <div class="col-sm-6">
+                    <input type="input" class="form-control" id="input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="emailInput" class="col-sm-6 col-form-label text-right">Email</label>
+                    <div class="col-sm-6">
+                    <input type="input" class="form-control" id="input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phoneInput" class="col-sm-6 col-form-label text-right">Phone</label>
+                    <div class="col-sm-6">
+                    <input type="input" class="form-control" id="input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="reason for Inqury" class="col-sm-6 col-form-label text-right">Reason for Inqury:</label>
+                    <div class="col-sm-6">
+                    <select type="select" class="form-control" id="select">
+                            <option value="Select a Reason">Catering</option>
+                            <option value="Software Support">Private Party</option>
+                            <option value="Hardware Support">Feedback</option>
+                            <option value="Information Request">Other</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td class="label">Additional Intormation:</td>
-                <td><textarea name="additional info" rows="4" cols="22"/></textarea></td>
-            </tr>
-            <tr>
-                <td class="label">Have you been to the restaurant?</td>
-                <td>
-                    <input type="radio" name="answer" value="No" checked/><label>No</label>
-                    <input type="radio" name="answer" value="Yes" /><label>Yes</label>
-                </td>
-            </tr>    
-            <tr>
-                <td class="label">Best days to contact you:</td>
-                <td>
-                    <input type="checkbox" name="day" value="M" /><label>M</label>
-                    <input type="checkbox" name="day" value="T" /><label>T</label>
-                    <input type="checkbox" name="day" value="W" /><label>W</label>
-                    <input type="checkbox" name="day" value="Th" /><label>Th</label>
-                    <input type="checkbox" name="day" value="F" /><label>F</label>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button>Send Request</button></td>
-            </tr>
-        </table>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="AdditionalInfo" class="col-sm-6 col-form-label text-right">Additional Information</label>
+                    <div class="col-sm-6">
+                    <textarea type="textarea" class="form-control" id="textarea" row="4"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Have you been to the restaurant?" class="col-sm-6 col-form-label text-right">Have you been to the restaurant?</label>
+                    <div class="col-sm-6">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked> No
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Yes
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Best days to contact you:" class="col-sm-6 col-form-label text-right">Best days to contact you:</label>
+                    <div class="col-sm-6">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> M
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> T
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> W
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Th
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> F
+                </div>
+                <div class="form-group row">
+                    <button type="button" class="btn btn-primary">Send Request</button>
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
         <div id="footer">
         <hr></hr>
             <div class="center">
